@@ -170,7 +170,7 @@ public class AirMapView extends MapView implements GoogleMap.InfoWindowAdapter,
                 event.putString("action", "marker-press");
                 manager.pushEvent(markerMap.get(marker), "onPress", event);
 
-                return false; // returning false opens the callout window, if possible
+                return true; // returning false opens the callout window, if possible
             }
         });
 
